@@ -13,7 +13,7 @@ public class BuscaAleatoria<T> implements IBuscador<T> {
     public BuscaAleatoria(T[] dados) {
         this.dados = dados;
         this.gerador = new Random();
-    }
+    } 
 
     @Override
     public long getComparacoes() {
@@ -28,7 +28,7 @@ public class BuscaAleatoria<T> implements IBuscador<T> {
     }
 
     @Override
-    public T buscar(T dado) {
+    public T buscar(T dado) {//oi
         comparacoes = 0;
         inicio = LocalDateTime.now();
 
